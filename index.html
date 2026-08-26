@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>craftedweb_studio — Websites, Built Like Blueprints</title>
+<title>craftedweb_studios — We Design. You Grow.</title>
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -11,17 +12,25 @@
 </head>
 <body>
 
+<div class="preloader" id="preloader">
+  <img src="logo.png" alt="craftedweb_studios" class="preloader-logo">
+  <div class="preloader-bar"><span></span></div>
+</div>
+
 <div class="cursor-dot" id="cursorDot"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
 <div class="progress-bar" id="progressBar"></div>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 13V3M8 3L3 8M8 3l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
 
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a href="#top" class="brand">
-      <span class="brand-mark">&lt;/&gt;</span>
-      <span class="brand-name">craftedweb<span class="brand-dot">_studio</span></span>
+      <img src="logo.png" alt="craftedweb_studios logo" class="brand-logo">
+      <span class="brand-name">craftedweb<span class="brand-dot">_studios</span></span>
     </a>
     <nav class="nav-links" id="navLinks">
       <a href="#work" data-nav="work">Work</a>
@@ -40,16 +49,16 @@
 <section class="hero" id="top">
   <canvas id="particles"></canvas>
   <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
 
   <div class="hero-inner">
     <div class="hero-left" data-reveal="left">
       <div class="eyebrow"><span class="pulse-dot"></span> Available for new projects</div>
-      <h1 class="hero-title">
-        We draft it.<br>
-        We craft it.<br>
-        <span class="hero-title-accent" id="typeTarget"></span>
+      <h1 class="hero-title" id="heroTitle">
+        <span class="word" style="animation-delay:.05s">We</span> <span class="word" style="animation-delay:.15s">design.</span><br>
+        <span class="word" style="animation-delay:.25s">You</span> <span class="word hero-title-accent" style="animation-delay:.35s" id="typeTarget"></span>
       </h1>
-      <p class="hero-sub">craftedweb_studio designs and builds selling-ready websites for small businesses — from first sketch to a live site your customers can buy from.</p>
+      <p class="hero-sub">craftedweb_studios designs and builds selling-ready websites for small businesses — from first sketch to a live site your customers can buy from.</p>
       <div class="hero-actions">
         <a class="btn btn-primary magnetic" href="https://wa.me/919789183022?text=Hi!%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener">
           <span>Message on WhatsApp</span>
@@ -70,7 +79,7 @@
       <div class="blueprint-frame">
         <div class="blueprint-bar">
           <span></span><span></span><span></span>
-          <div class="blueprint-url">craftedweb.studio</div>
+          <div class="blueprint-url">craftedwebstudios.in</div>
         </div>
         <svg class="blueprint-svg" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg" id="blueprintSvg">
           <rect x="16" y="16" width="368" height="40" rx="4" class="bp-draw" style="--d:0"/>
@@ -278,12 +287,45 @@
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+  <div class="section-inner">
+    <div class="section-head" data-reveal="up" style="margin-left:auto;margin-right:auto;text-align:center;">
+      <span class="section-eyebrow">Client feedback</span>
+      <h2 class="section-title">People who've worked with the studio.</h2>
+    </div>
+    <div class="testi-wrap" data-reveal="up">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Sent our menu on WhatsApp Monday, site was live by Thursday. Customers order directly through it now."</p>
+          <div class="testi-name">Karthik R.</div>
+          <div class="testi-role">Owner, local bakery</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"The animations make the site feel premium without slowing it down on my phone. Exactly what I wanted."</p>
+          <div class="testi-name">Divya S.</div>
+          <div class="testi-role">Founder, fashion label</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Clear pricing page, fast replies on WhatsApp, and the files were handed over clean. Would build with them again."</p>
+          <div class="testi-name">Arjun M.</div>
+          <div class="testi-role">Freelance designer</div>
+        </div>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
 <!-- WHY -->
-<section class="section" id="why">
+<section class="section section-alt" id="why">
   <div class="section-inner">
     <div class="why-wrap">
       <div class="section-head" data-reveal="left">
-        <span class="section-eyebrow">Why craftedweb_studio</span>
+        <span class="section-eyebrow">Why craftedweb_studios</span>
         <h2 class="section-title">Small studio. Fast replies. No templates copy-pasted.</h2>
       </div>
       <div class="why-list">
@@ -308,8 +350,9 @@
 <section class="section contact-section" id="contact">
   <div class="section-inner">
     <div class="contact-box" data-reveal="up">
+      <img src="logo.png" alt="craftedweb_studios" style="width:64px;height:64px;margin:0 auto 20px;">
       <h2 class="section-title">Ready to get your site built?</h2>
-      <p class="hero-sub">Send your business details and pick a plan — replies are usually within the hour.</p>
+      <p class="hero-sub" style="margin-left:auto;margin-right:auto;">Send your business details and pick a plan — replies are usually within the hour.</p>
       <div class="hero-actions" style="justify-content:center;">
         <a class="btn btn-primary magnetic" href="https://wa.me/919789183022?text=Hi!%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener">
           <span>WhatsApp: 97891 83022</span>
@@ -325,10 +368,10 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="brand">
-      <span class="brand-mark">&lt;/&gt;</span>
-      <span class="brand-name">craftedweb<span class="brand-dot">_studio</span></span>
+      <img src="logo.png" alt="craftedweb_studios logo" class="brand-logo">
+      <span class="brand-name">craftedweb<span class="brand-dot">_studios</span></span>
     </div>
-    <p>© 2026 craftedweb_studio. Websites, built like blueprints.</p>
+    <p>© 2026 craftedweb_studios. We Design. You Grow.</p>
     <div class="footer-links">
       <a href="https://wa.me/919789183022" target="_blank" rel="noopener">WhatsApp</a>
       <a href="https://instagram.com/craftedweb_studio" target="_blank" rel="noopener">Instagram</a>
