@@ -1,341 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CraftedWeb Studio – Premium Web Design</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>craftedweb_studio — Websites, Built Like Blueprints</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- CURSOR -->
-  <div class="cursor-blob" id="cursorBlob"></div>
-  <div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#" class="logo">Crafted<span>Web</span></a>
-      <ul class="nav-links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact" class="nav-cta">Get Started</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Get Started</a>
-    </div>
-  </nav>
+<div class="progress-bar" id="progressBar"></div>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <canvas id="heroCanvas" class="hero-canvas"></canvas>
-    <div class="hero-bg">
-      <div class="orb orb1"></div>
-      <div class="orb orb2"></div>
-      <div class="orb orb3"></div>
-    </div>
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span class="brand-name">craftedweb<span class="brand-dot">_studio</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#work" data-nav="work">Work</a>
+      <a href="#process" data-nav="process">Process</a>
+      <a href="#pricing" data-nav="pricing">Pricing</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/919789183022?text=Hi!%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener">
+      <span>Start a project</span>
+    </a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-    <div class="hero-content">
-      <div class="hero-badge reveal-up">
-        <span class="badge-dot"></span>
-        Available for Projects
-      </div>
+<!-- HERO -->
+<section class="hero" id="top">
+  <canvas id="particles"></canvas>
+  <div class="hero-glow"></div>
 
-      <h1 class="hero-title reveal-up delay-1">
-        We Build<br />
-        <span class="gradient-text">Websites</span><br />
-        That <span class="type-wrap"><span id="typeTarget">Sell.</span><span class="cursor-blink">|</span></span>
+  <div class="hero-inner">
+    <div class="hero-left" data-reveal="left">
+      <div class="eyebrow"><span class="pulse-dot"></span> Available for new projects</div>
+      <h1 class="hero-title">
+        We draft it.<br>
+        We craft it.<br>
+        <span class="hero-title-accent" id="typeTarget"></span>
       </h1>
-
-      <p class="hero-sub reveal-up delay-2">
-        Stunning, fast, conversion-focused websites for brands that refuse to be ordinary.
-      </p>
-
-      <div class="hero-actions reveal-up delay-3">
-        <a href="#pricing" class="btn-primary">
-          <span>View Pricing</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <p class="hero-sub">craftedweb_studio designs and builds selling-ready websites for small businesses — from first sketch to a live site your customers can buy from.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary magnetic" href="https://wa.me/919789183022?text=Hi!%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener">
+          <span>Message on WhatsApp</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="#work" class="btn-ghost">See Our Work</a>
+        <a class="btn btn-ghost magnetic" href="#pricing">
+          <span>See pricing</span>
+        </a>
       </div>
-
-      <div class="hero-stats reveal-up delay-4">
-        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Projects</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Satisfaction</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">5★</span><span class="stat-label">Rating</span></div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-count="50">0</span><span class="stat-plus">+</span><span class="stat-label">Sites shipped</span></div>
+        <div class="stat"><span class="stat-num" data-count="100">0</span><span class="stat-plus">%</span><span class="stat-label">Mobile ready</span></div>
+        <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-plus">★</span><span class="stat-label">Client rating</span></div>
       </div>
     </div>
 
-    <div class="scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- MARQUEE -->
-  <div class="marquee-wrap">
-    <div class="marquee-track">
-      <span>Web Design</span><span class="mx-dot">✦</span>
-      <span>UI/UX</span><span class="mx-dot">✦</span>
-      <span>Landing Pages</span><span class="mx-dot">✦</span>
-      <span>E-Commerce</span><span class="mx-dot">✦</span>
-      <span>Brand Identity</span><span class="mx-dot">✦</span>
-      <span>SEO Optimised</span><span class="mx-dot">✦</span>
-      <span>Mobile First</span><span class="mx-dot">✦</span>
-      <span>Web Design</span><span class="mx-dot">✦</span>
-      <span>UI/UX</span><span class="mx-dot">✦</span>
-      <span>Landing Pages</span><span class="mx-dot">✦</span>
-      <span>E-Commerce</span><span class="mx-dot">✦</span>
-      <span>Brand Identity</span><span class="mx-dot">✦</span>
-      <span>SEO Optimised</span><span class="mx-dot">✦</span>
-      <span>Mobile First</span><span class="mx-dot">✦</span>
+    <div class="hero-right" data-reveal="right">
+      <div class="blueprint-frame">
+        <div class="blueprint-bar">
+          <span></span><span></span><span></span>
+          <div class="blueprint-url">craftedweb.studio</div>
+        </div>
+        <svg class="blueprint-svg" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg" id="blueprintSvg">
+          <rect x="16" y="16" width="368" height="40" rx="4" class="bp-draw" style="--d:0"/>
+          <circle cx="34" cy="36" r="6" class="bp-draw" style="--d:1"/>
+          <rect x="52" y="30" width="90" height="12" rx="3" class="bp-draw" style="--d:2"/>
+          <rect x="300" y="28" width="70" height="16" rx="8" class="bp-draw-fill" style="--d:3"/>
+          <rect x="16" y="72" width="220" height="18" rx="3" class="bp-draw" style="--d:4"/>
+          <rect x="16" y="98" width="160" height="10" rx="2" class="bp-draw" style="--d:5"/>
+          <rect x="16" y="122" width="110" height="28" rx="6" class="bp-draw-fill" style="--d:6"/>
+          <rect x="16" y="170" width="112" height="130" rx="6" class="bp-draw" style="--d:7"/>
+          <rect x="144" y="170" width="112" height="130" rx="6" class="bp-draw" style="--d:8"/>
+          <rect x="272" y="170" width="112" height="130" rx="6" class="bp-draw" style="--d:9"/>
+          <circle cx="72" cy="204" r="16" class="bp-draw" style="--d:10"/>
+          <circle cx="200" cy="204" r="16" class="bp-draw" style="--d:10.3"/>
+          <circle cx="328" cy="204" r="16" class="bp-draw" style="--d:10.6"/>
+          <rect x="28" y="234" width="88" height="8" rx="2" class="bp-draw" style="--d:11"/>
+          <rect x="156" y="234" width="88" height="8" rx="2" class="bp-draw" style="--d:11.2"/>
+          <rect x="284" y="234" width="88" height="8" rx="2" class="bp-draw" style="--d:11.4"/>
+          <rect x="28" y="250" width="60" height="6" rx="2" class="bp-draw dim" style="--d:11.6"/>
+          <rect x="156" y="250" width="60" height="6" rx="2" class="bp-draw dim" style="--d:11.8"/>
+          <rect x="284" y="250" width="60" height="6" rx="2" class="bp-draw dim" style="--d:12"/>
+        </svg>
+        <div class="blueprint-tag">Live preview</div>
+      </div>
+      <div class="floating-chip chip-1">₹4,999 <span>starter</span></div>
+      <div class="floating-chip chip-2">98 <span>Lighthouse</span></div>
     </div>
   </div>
 
-  <!-- SERVICES -->
-  <section class="section services" id="services">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow reveal-up">What We Do</p>
-        <h2 class="section-title reveal-up delay-1">Every Pixel,<br /><span class="gradient-text">Purposeful.</span></h2>
+  <div class="scroll-cue"><span></span>Scroll</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Selling pages</span><span>·</span><span>Pricing sections</span><span>·</span><span>Scroll animation</span><span>·</span><span>Mobile-first</span><span>·</span><span>Fast hosting</span><span>·</span><span>WhatsApp integration</span><span>·</span>
+    <span>Selling pages</span><span>·</span><span>Pricing sections</span><span>·</span><span>Scroll animation</span><span>·</span><span>Mobile-first</span><span>·</span><span>Fast hosting</span><span>·</span><span>WhatsApp integration</span><span>·</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="section-inner">
+    <div class="section-head" data-reveal="up">
+      <span class="section-eyebrow">What you get</span>
+      <h2 class="section-title">Every build is made to <em>sell</em>, not just look good.</h2>
+    </div>
+    <div class="service-grid">
+      <article class="service-card" data-reveal="up" data-delay="0">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Selling-focused layout</h3>
+        <p>Clear pricing, clear offer, clear call-to-action — copy and layout built around getting a reply, not just a scroll.</p>
+      </article>
+      <article class="service-card" data-reveal="up" data-delay="1">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Smooth scroll animation</h3>
+        <p>Reveals, parallax and micro-interactions tuned frame-by-frame so it feels premium on phone and desktop alike.</p>
+      </article>
+      <article class="service-card" data-reveal="up" data-delay="2">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M9 18h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Mobile + PC ready</h3>
+        <p>One build, tested across breakpoints — the same craft on a 6-inch screen as on a 27-inch monitor.</p>
+      </article>
+      <article class="service-card" data-reveal="up" data-delay="3">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Separate, clean files</h3>
+        <p>HTML, CSS and JS delivered as organised files — easy to hand to any host or developer later.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section section-alt" id="process">
+  <div class="section-inner">
+    <div class="section-head" data-reveal="up">
+      <span class="section-eyebrow">How it works</span>
+      <h2 class="section-title">From message to live site, in four steps.</h2>
+    </div>
+    <div class="process-list">
+      <div class="process-item" data-reveal="left" data-delay="0">
+        <span class="process-num">01</span>
+        <div>
+          <h3>You message</h3>
+          <p>Send your business details on WhatsApp or Instagram — what you sell, and who buys it.</p>
+        </div>
       </div>
-      <div class="services-grid stagger-children">
-        <div class="service-card reveal-up">
-          <div class="card-shine"></div>
-          <div class="service-icon-wrap"><span class="service-icon">⬡</span></div>
-          <h3>Landing Pages</h3>
-          <p>High-converting single-page sites crafted to turn visitors into customers.</p>
-          <span class="service-tag">Most Popular</span>
+      <div class="process-item" data-reveal="left" data-delay="1">
+        <span class="process-num">02</span>
+        <div>
+          <h3>We sketch</h3>
+          <p>A quick layout plan, so you approve the structure before a single pixel is polished.</p>
         </div>
-        <div class="service-card reveal-up delay-1">
-          <div class="card-shine"></div>
-          <div class="service-icon-wrap"><span class="service-icon">◈</span></div>
-          <h3>E-Commerce Sites</h3>
-          <p>Beautiful online stores with seamless checkout and mobile-first experiences.</p>
+      </div>
+      <div class="process-item" data-reveal="left" data-delay="2">
+        <span class="process-num">03</span>
+        <div>
+          <h3>We build</h3>
+          <p>Full design, animation and copy pass — built responsive from the first line of code.</p>
         </div>
-        <div class="service-card reveal-up delay-2">
-          <div class="card-shine"></div>
-          <div class="service-icon-wrap"><span class="service-icon">◎</span></div>
-          <h3>Business Websites</h3>
-          <p>Full multi-page websites to establish a dominant online presence.</p>
-        </div>
-        <div class="service-card reveal-up">
-          <div class="card-shine"></div>
-          <div class="service-icon-wrap"><span class="service-icon">✦</span></div>
-          <h3>UI/UX Design</h3>
-          <p>Wireframes, prototypes and pixel-perfect design systems.</p>
-        </div>
-        <div class="service-card reveal-up delay-1">
-          <div class="card-shine"></div>
-          <div class="service-icon-wrap"><span class="service-icon">⬛</span></div>
-          <h3>Brand Identity</h3>
-          <p>Logo, colour palette, typography — everything to show up consistently.</p>
-        </div>
-        <div class="service-card reveal-up delay-2">
-          <div class="card-shine"></div>
-          <div class="service-icon-wrap"><span class="service-icon">◉</span></div>
-          <h3>SEO + Speed</h3>
-          <p>Performance-optimised and SEO-ready so Google notices you first.</p>
+      </div>
+      <div class="process-item" data-reveal="left" data-delay="3">
+        <span class="process-num">04</span>
+        <div>
+          <h3>You go live</h3>
+          <p>Files handed over, deployed to your domain or hosting of choice. Support after launch.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- WORK -->
-  <section class="section work" id="work">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow reveal-up">Portfolio</p>
-        <h2 class="section-title reveal-up delay-1">Built With<br /><span class="gradient-text">Obsession.</span></h2>
+<!-- PRICING -->
+<section class="section" id="pricing">
+  <div class="section-inner">
+    <div class="section-head" data-reveal="up">
+      <span class="section-eyebrow">Pricing</span>
+      <h2 class="section-title">Pick a plan. Message on WhatsApp to start.</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card" data-reveal="up" data-delay="0">
+        <h3 class="price-plan">Starter</h3>
+        <p class="price-desc">A clean single-page site to get you online fast.</p>
+        <div class="price-amount"><span class="price-currency">₹</span>4,999</div>
+        <ul class="price-features">
+          <li>1-page responsive site</li>
+          <li>Scroll animations</li>
+          <li>WhatsApp button built in</li>
+          <li>3-day delivery</li>
+        </ul>
+        <a class="btn btn-outline magnetic" href="https://wa.me/919789183022?text=Hi!%20I'm%20interested%20in%20the%20Starter%20plan%20(%E2%82%B94%2C999)." target="_blank" rel="noopener">Choose Starter</a>
       </div>
-      <div class="work-grid">
-        <div class="work-card reveal-up">
-          <div class="work-thumb" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364)">
-            <span class="work-label">Landing Page</span>
-          </div>
-          <div class="work-info">
-            <h4>SaaS Product Launch</h4>
-            <p>Dark-mode site with animated hero &amp; pricing</p>
-            <span class="work-arrow">→</span>
-          </div>
+      <div class="price-card price-featured" data-reveal="up" data-delay="1">
+        <span class="price-badge">Most picked</span>
+        <h3 class="price-plan">Growth</h3>
+        <p class="price-desc">Multi-section site built to convert visitors into buyers.</p>
+        <div class="price-amount"><span class="price-currency">₹</span>12,999</div>
+        <ul class="price-features">
+          <li>Everything in Starter</li>
+          <li>Up to 5 sections / pages</li>
+          <li>Pricing + testimonials layout</li>
+          <li>Custom animation pass</li>
+          <li>5-day delivery</li>
+        </ul>
+        <a class="btn btn-primary magnetic" href="https://wa.me/919789183022?text=Hi!%20I'm%20interested%20in%20the%20Growth%20plan%20(%E2%82%B912%2C999)." target="_blank" rel="noopener">Choose Growth</a>
+      </div>
+      <div class="price-card" data-reveal="up" data-delay="2">
+        <h3 class="price-plan">Premium</h3>
+        <p class="price-desc">Full brand site with custom sections and priority support.</p>
+        <div class="price-amount"><span class="price-currency">₹</span>24,999</div>
+        <ul class="price-features">
+          <li>Everything in Growth</li>
+          <li>Unlimited sections</li>
+          <li>Custom illustrations / assets</li>
+          <li>Priority revisions</li>
+          <li>30-day post-launch support</li>
+        </ul>
+        <a class="btn btn-outline magnetic" href="https://wa.me/919789183022?text=Hi!%20I'm%20interested%20in%20the%20Premium%20plan%20(%E2%82%B924%2C999)." target="_blank" rel="noopener">Choose Premium</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="section section-alt" id="work">
+  <div class="section-inner">
+    <div class="section-head" data-reveal="up">
+      <span class="section-eyebrow">Recent work</span>
+      <h2 class="section-title">A few builds from the studio.</h2>
+    </div>
+    <div class="work-grid">
+      <a class="work-card" href="#contact" data-reveal="up" data-delay="0">
+        <div class="work-thumb work-thumb-1"></div>
+        <div class="work-info">
+          <h3>Local bakery ordering site</h3>
+          <p>Menu, pricing, WhatsApp ordering</p>
         </div>
-        <div class="work-card reveal-up delay-1">
-          <div class="work-thumb" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#533483)">
-            <span class="work-label">E-Commerce</span>
-          </div>
-          <div class="work-info">
-            <h4>Fashion Brand Store</h4>
-            <p>Luxury shopping experience with smooth animations</p>
-            <span class="work-arrow">→</span>
-          </div>
+        <svg class="work-arrow" width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="work-card" href="#contact" data-reveal="up" data-delay="1">
+        <div class="work-thumb work-thumb-2"></div>
+        <div class="work-info">
+          <h3>Boutique fashion label</h3>
+          <p>Lookbook, pricing, Instagram link-in-bio</p>
         </div>
-        <div class="work-card reveal-up delay-2">
-          <div class="work-thumb" style="background:linear-gradient(135deg,#0d0d0d,#1a1a1a,#6c3483)">
-            <span class="work-label">Portfolio</span>
-          </div>
-          <div class="work-info">
-            <h4>Creative Agency</h4>
-            <p>Award-worthy scroll experience &amp; bold typography</p>
-            <span class="work-arrow">→</span>
-          </div>
+        <svg class="work-arrow" width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="work-card" href="#contact" data-reveal="up" data-delay="2">
+        <div class="work-thumb work-thumb-3"></div>
+        <div class="work-info">
+          <h3>Freelance service page</h3>
+          <p>Portfolio grid, tiered pricing table</p>
+        </div>
+        <svg class="work-arrow" width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="section-inner">
+    <div class="why-wrap">
+      <div class="section-head" data-reveal="left">
+        <span class="section-eyebrow">Why craftedweb_studio</span>
+        <h2 class="section-title">Small studio. Fast replies. No templates copy-pasted.</h2>
+      </div>
+      <div class="why-list">
+        <div class="why-item" data-reveal="right" data-delay="0">
+          <span class="why-num">A</span>
+          <div><h3>Built from scratch</h3><p>Every layout is coded for your content, not a recoloured theme.</p></div>
+        </div>
+        <div class="why-item" data-reveal="right" data-delay="1">
+          <span class="why-num">B</span>
+          <div><h3>You get the source files</h3><p>Separate HTML, CSS and JS — no lock-in to a page builder.</p></div>
+        </div>
+        <div class="why-item" data-reveal="right" data-delay="2">
+          <span class="why-num">C</span>
+          <div><h3>Direct on WhatsApp</h3><p>No ticket system — message the person building your site.</p></div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PRICING -->
-  <section class="section pricing" id="pricing">
-    <div class="container">
-      <div class="section-header">
-        <p class="eyebrow reveal-up">Pricing</p>
-        <h2 class="section-title reveal-up delay-1">Transparent.<br /><span class="gradient-text">No Surprises.</span></h2>
-        <p class="section-sub reveal-up delay-2">All plans include mobile &amp; desktop responsive design, 1 revision round, and fast delivery.</p>
-      </div>
-
-      <div class="pricing-grid">
-        <div class="price-card reveal-left">
-          <div class="price-inner">
-            <p class="plan-name">Starter</p>
-            <p class="plan-desc">Perfect for small businesses &amp; solopreneurs.</p>
-            <div class="plan-price"><span class="currency">₹</span><span class="amount">4,999</span></div>
-            <p class="plan-note">One-time · 5-Day Delivery</p>
-            <ul class="plan-features">
-              <li class="yes">1-Page Landing Site</li>
-              <li class="yes">Mobile + Desktop Ready</li>
-              <li class="yes">Contact Form</li>
-              <li class="yes">Basic SEO Setup</li>
-              <li class="no">Custom Animations</li>
-              <li class="no">E-Commerce</li>
-            </ul>
-            <a href="https://wa.me/919789183022?text=Hi%20CraftedWeb%20Studio!%20Interested%20in%20Starter%20plan." class="btn-outline" target="_blank">Start Project</a>
-          </div>
-        </div>
-
-        <div class="price-card price-featured reveal-up delay-1">
-          <div class="featured-badge">✦ Most Popular</div>
-          <div class="price-inner">
-            <p class="plan-name">Pro</p>
-            <p class="plan-desc">For brands ready to make a real impression.</p>
-            <div class="plan-price"><span class="currency">₹</span><span class="amount">12,999</span></div>
-            <p class="plan-note">One-time · 10-Day Delivery</p>
-            <ul class="plan-features">
-              <li class="yes">Up to 5 Pages</li>
-              <li class="yes">Mobile + Desktop Ready</li>
-              <li class="yes">Custom Scroll Animations</li>
-              <li class="yes">WhatsApp Integration</li>
-              <li class="yes">Advanced SEO Setup</li>
-              <li class="no">E-Commerce</li>
-            </ul>
-            <a href="https://wa.me/919789183022?text=Hi%20CraftedWeb%20Studio!%20Interested%20in%20Pro%20plan." class="btn-primary" target="_blank">Start Project</a>
-          </div>
-        </div>
-
-        <div class="price-card reveal-right">
-          <div class="price-inner">
-            <p class="plan-name">Elite</p>
-            <p class="plan-desc">Full-scale websites &amp; e-commerce powerhouses.</p>
-            <div class="plan-price"><span class="currency">₹</span><span class="amount">24,999</span></div>
-            <p class="plan-note">One-time · 20-Day Delivery</p>
-            <ul class="plan-features">
-              <li class="yes">Unlimited Pages</li>
-              <li class="yes">E-Commerce Ready</li>
-              <li class="yes">Premium Animations</li>
-              <li class="yes">Payment Gateway</li>
-              <li class="yes">Full SEO + Speed Audit</li>
-              <li class="yes">2 Revision Rounds</li>
-            </ul>
-            <a href="https://wa.me/919789183022?text=Hi%20CraftedWeb%20Studio!%20Interested%20in%20Elite%20plan." class="btn-outline" target="_blank">Start Project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="custom-cta reveal-up">
-        <p>Need something custom? <strong>Let's talk.</strong></p>
-        <a href="https://wa.me/919789183022?text=Hi!%20I%20need%20a%20custom%20quote." class="btn-ghost" target="_blank">Get Custom Quote</a>
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <div class="contact-box" data-reveal="up">
+      <h2 class="section-title">Ready to get your site built?</h2>
+      <p class="hero-sub">Send your business details and pick a plan — replies are usually within the hour.</p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary magnetic" href="https://wa.me/919789183022?text=Hi!%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener">
+          <span>WhatsApp: 97891 83022</span>
+        </a>
+        <a class="btn btn-ghost magnetic" href="https://instagram.com/craftedweb_studio" target="_blank" rel="noopener">
+          <span>@craftedweb_studio</span>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- WHY US -->
-  <section class="section whyus">
-    <div class="container">
-      <div class="whyus-inner">
-        <div class="whyus-text reveal-left">
-          <p class="eyebrow">Why CraftedWeb?</p>
-          <h2 class="section-title">Design That<br /><span class="gradient-text">Converts.</span></h2>
-          <p class="section-sub">We don't just make things pretty. Every site is engineered to make visitors take action — call, buy, or sign up.</p>
-          <a href="https://wa.me/919789183022" class="btn-primary" target="_blank">Talk to Us Now</a>
-        </div>
-        <div class="whyus-cards reveal-right stagger-children">
-          <div class="why-item">
-            <span class="why-num">01</span>
-            <div><h4>Fast Turnaround</h4><p>Sites delivered in days, not months.</p></div>
-          </div>
-          <div class="why-item">
-            <span class="why-num">02</span>
-            <div><h4>Mobile First</h4><p>Looks perfect on every screen size.</p></div>
-          </div>
-          <div class="why-item">
-            <span class="why-num">03</span>
-            <div><h4>Conversion Focused</h4><p>Built to turn clicks into customers.</p></div>
-          </div>
-          <div class="why-item">
-            <span class="why-num">04</span>
-            <div><h4>SEO Ready</h4><p>Google-friendly from day one.</p></div>
-          </div>
-        </div>
-      </div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="brand">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span class="brand-name">craftedweb<span class="brand-dot">_studio</span></span>
     </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="contact-inner reveal-scale">
-        <p class="eyebrow">Let's Work Together</p>
-        <h2 class="section-title">Ready to<br /><span class="gradient-text">Start?</span></h2>
-        <p class="section-sub">Reach us directly — we reply fast.</p>
-        <div class="contact-btns">
-          <a href="https://wa.me/919789183022?text=Hi%20CraftedWeb%20Studio!%20I%20want%20to%20start%20a%20project." class="btn-whatsapp" target="_blank">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-            9789183022
-          </a>
-          <a href="https://instagram.com/craftedweb_studio" class="btn-instagram" target="_blank">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            @craftedweb_studio
-          </a>
-        </div>
-      </div>
+    <p>© 2026 craftedweb_studio. Websites, built like blueprints.</p>
+    <div class="footer-links">
+      <a href="https://wa.me/919789183022" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://instagram.com/craftedweb_studio" target="_blank" rel="noopener">Instagram</a>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <a href="#" class="logo">Crafted<span>Web</span></a>
-        <p>© 2025 CraftedWeb Studio. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="https://instagram.com/craftedweb_studio" target="_blank">Instagram</a>
-          <a href="https://wa.me/919789183022" target="_blank">WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
